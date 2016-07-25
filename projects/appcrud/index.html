@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <title>AngularJS</title> 
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="js/jquery-2.1.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/angular.min.js"></script>
+  </script> 
+
+<style type="text/css">
+  #norec
+  {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  #addbuttons
+  {
+    position: relative;
+    left: 230px;
+  }
+
+  #validatetxt
+  {
+    position: relative;
+    left: 270px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+  }
+  body
+  {
+    overflow-x:hidden; 
+  }
+
+</style>
+
+
+</head> 
+
+<body ng-app="myApp" ng-controller="userCtrl">
+
+<div class="container">
+<div class="page-header">
+    <h1>AngularJS CRUD Application</h1>
+</div>
+<h3>Users</h3>
+<div class="table-responsive"> 
+<table class="table">
+  <thead>
+    <tr style = "text-align:center;">
+      <th>ACTION</th>
+      <th>ID</th>
+      <th>FIRST NAME</th>
+      <th>LAST NAME</th>
+      <th>AGE</th>
+      <th>ADDRESS</th>
+      <th>TELEPHONE</th>
+      <th>E-MAIL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="user in users">
+      <td>
+        <button class="btn btn-warning" ng-click="editUser(user.id)">
+          <span class="glyphicon glyphicon-pencil"></span>
+        </button>
+        <span> </span>
+        <button class="btn btn-danger" ng-click="delete(user.id)">
+          <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </td>
+      <td>{{ user.id }}</td>
+      <td>{{ user.fname }}</td>
+      <td>{{ user.lname }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.address }}</td>
+      <td>{{ user.telephone }}</td>
+      <td>{{ user.mail }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <p id = "norec"> </p>
+<hr>
+<button class="btn btn-info" ng-hide = "btnaddnew" ng-click="editUser('addnew')">
+<span class="glyphicon glyphicon-user"></span> ADD
+</button>
+
+<form class="form-horizontal" ng-hide="hideform" name = "addform">
+  <h3 ng-show="edit">Create New User:</h3>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* FIRST NAME:</label>
+    <div class="col-sm-4">
+    <input type="text"  class="form-control" ng-model="fname" placeholder="Juan" maxlength = "20" required>
+    </div>
+  </div> 
+
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* LAST NAME:</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="lname" placeholder="Dela Cruz" maxlength = "20" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* AGE:</label>
+    <div class="col-sm-2">
+    <input type="number" class="form-control" ng-model="age" placeholder="19" min="18" required>
+    </div>
+  </div> 
+
+  <div class="form-group">
+  <label class="col-sm-2 control-label">* ADDRESS:</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="address" placeholder="145 Yakal Street Makati City" required>
+    </div>
+  </div>
+    <div class="form-group">
+  <label class="col-sm-2 control-label">* TELEPHONE:</label>
+    <div class="col-sm-2">
+    <input type="text" class="form-control" ng-model="telephone" placeholder="09370000000" 
+    onkeypress="if (isNaN( String.fromCharCode(event.keyCode) )) return false;" maxlength = "11" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* E-MAIL:</label>
+    <div class="col-sm-4">
+    <input type="email" class="form-control" ng-model="mail" placeholder="sample@example.com" name = "addemail" required>
+    </div>
+  </div> 
+<br>
+ <p id = "validatetxt"> </p>
+<div id = "addbuttons">
+  <button class="btn btn-success" ng-click="addnew()">
+  <span class="glyphicon glyphicon-plus-sign"></span> ADD
+  </button>
+    <button class="btn btn-warning"  ng-click="clear()">
+  <span class="glyphicon glyphicon-remove-sign"></span> CLEAR
+  </button>
+      <button class="btn btn-danger"  ng-click="canceladd()">
+  <span class="glyphicon glyphicon-log-out"></span> CANCEL
+  </button>
+</div>
+</form>
+<br>
+
+<!-- edit -->
+
+<form class="form-horizontal" ng-hide="editform" name = "editform">
+  <h3 ng-show="edit">Edit User:</h3>
+
+  <div style = "display:none" class="form-group">
+    <label class="col-sm-2 control-label">ID:</label>
+    <div class="col-sm-4">
+    <input type="text"  class="form-control" ng-model="idd" ng-hide="hidid" >
+    </div>
+  </div> 
+
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* FIRST NAME:</label>
+    <div class="col-sm-4">
+    <input type="text"  class="form-control" ng-model="efname" name = "editfname"  required>
+    </div>
+  </div> 
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* LAST NAME:</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="elname" name = "editlname" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* AGE:</label>
+    <div class="col-sm-2">
+    <input type="number" class="form-control" ng-model="eage"  name = "editage" min="18" required>
+    </div>
+  </div> 
+
+  <div class="form-group">
+  <label class="col-sm-2 control-label">* ADDRESS:</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" ng-model="eaddress"  name = "editaddress" required>
+    </div>
+  </div>
+    <div class="form-group">
+  <label class="col-sm-2 control-label">* TELEPHONE:</label>
+    <div class="col-sm-2">
+    <input type="text" class="form-control" ng-model="etelephone" name = "edittelephone" onkeypress="if (isNaN( String.fromCharCode(event.keyCode) )) return false;" maxlength = "11" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">* E-MAIL:</label>
+    <div class="col-sm-4">
+    <input type="email" class="form-control" name = "editemail" ng-model="eemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  required>
+    
+    </div>
+  </div> 
+<br>
+ <p id = "validatetxt"> </p>
+<div id = "addbuttons">
+  <button class="btn btn-success"  ng-click="save()">
+  <span class="glyphicon glyphicon-ok"></span> SAVE
+  </button>
+    <button class="btn btn-danger"  ng-click="cancel()">
+  <span class="glyphicon glyphicon-remove"></span> CANCEL
+  </button>
+</div>
+</form>
+<br>
+
+</div>
+<script src= "js/script.js">
+</script>
+</body>
+</html>
