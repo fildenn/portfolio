@@ -14,19 +14,13 @@
       <link rel="stylesheet" href="css/owl.carousel.css">
       <link id="switcher" href="css/themes/lite-blue-theme.css" type="text/css" rel="stylesheet" media="screen,projection"/>           
       <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="shortcut icon" type="image/x-icon" href="img/me.ico" />
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" /> 
       <link rel="stylesheet" type="text/css" href="css/slick.css"/> 
     </head>
     <body>
-
-    <div id="wpf-loader-two">          
-      <div class="wpf-loader-two-inner">
-        <span>LOADING</span>
-      </div>
-    </div> 
 
       <header id="header" role="banner">
         <div class="navbar-fixed">
@@ -133,12 +127,10 @@
                             </div> -->
                           </div>
 
-                          <div class="fixed-action-btn click-to-toggle " style="bottom: 10px; right: 15px;">
+<!--                           <div class="fixed-action-btn click-to-toggle " style="bottom: 10px; right: 15px;">
                           <a id="maindl" class="btn-floating btn-large lite-blue btn z-depth-5">
                             <i class="tooltipped mdi-content-archive left" data-position="left" data-delay="100" data-tooltip="You can download my resume."></i>
                           </a>
-                          <!--  onclick="Materialize.toast('You can download my resume anytime.', 4000)" -->
-                          <!-- ata-position="left" data-delay="50" data-tooltip="My resume is downlodable in different formats." -->
                           <ul id = "dlbutt">
                             <li>
                             <form action = "downloadfileimg.php" method = "POST">
@@ -153,7 +145,7 @@
                           </form>
 
                           </ul>
-                        </div>
+                        </div> -->
                         </div>
                       </div>
                     </div>
@@ -453,7 +445,7 @@
             </div>
           </section>
 
-<section id="screenshot" class="certificate">
+<section id="screenshott" class="certificate">
     <div class="container">
       <div class="row">
         <div class="col m12">
@@ -1003,6 +995,31 @@
     );
     wow.init();
       </script>
+      <?php
+
+      if(isset($_GET['signal']))
+      {
+        $sign = $_GET['signal'];
+        //echo $sign;
+        if ($sign == "notsent")
+            {
+              echo '<script> Materialize.toast("Message not sent. Please try again.", 10000); </script>';
+              // header("Location:index.php");
+            }
+
+        elseif ($sign == "sent") 
+            {
+             echo '<script> Materialize.toast("Message sent. Thank you!", 10000); </script>';
+             // header("location:index.php"); 
+            }
+
+         elseif ($sign == "sentfeedback") 
+            {
+             echo '<script> Materialize.toast("Feedback sent. Thank you!", 10000); </script>';
+             // header("location:index.php"); 
+            }    
+      }
+      ?>
 
 <!-- modal -->
   <div id="modalforstore" class="modal modal-fixed-footer">
@@ -1039,7 +1056,7 @@
 
     </div>
     <div class="modal-footer">
-       <a onclick="Materialize.toast('Unavailable due to database issue.', 6000)" class="right  waves-effect btn-flat">VIEW PROJECT</a>
+       <a  target = "_blank" href="projects/ManuelJohnDaveMPWeb2/index.php" class="right  waves-effect btn-flat">VIEW PROJECT</a>
     </div>
   </div>
 <!-- crudmodal -->
@@ -1407,7 +1424,7 @@ As we have seen and experienced, the fast rate of technological advancement grea
     <div class="team"> <strong>ARC San Francisco Bulakan, Bulacan</strong></div>
     <br>
 
-    <iframe src="files/San Francisco Multipurpose Cooperative System with SMS-Based Notification.pdf" scrolling = "auto" frameborder = "0" height = "250px" width = "100%"></iframe>
+    <iframe src="files/San Francisco Multipurpose Cooperative System with SMS-Based Notification.pdf" scrolling = "auto" frameborder = "0" height = "280px" width = "100%"></iframe>
     </div>
     <div class="modal-footer">
        <a  href="#!" class="right  modal-action modal-close waves-effect btn-flat">OK</a>
