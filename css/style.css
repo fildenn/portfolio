@@ -1,5 +1,4 @@
 
-
 .say {
   font-size: 25px !important;
 }
@@ -146,6 +145,56 @@ color: #000 !important;
   bottom: -60px; 
 }
 
+
+
+/**/
+
+.certificate-slide li a:hover .view-btn-area{ 
+  display: block;
+  opacity: 1;
+}
+
+
+.certificate-slide .slick-dots li button {
+  background-color: #37C6F5;
+  border: 0 none; 
+  outline: none;
+  height: 4px;  
+  padding: 5px;
+  width: 20px;
+}
+
+
+.certificate-slide .slick-dots li button::before {
+  display: none;
+}
+
+
+.certificate-slide .slick-dots {
+  bottom: -60px; 
+}
+
+.certificate-slide{
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+
+.certificate-slide li{
+  outline: none;
+}
+
+
+.certificate-slide li a {
+  border: 5px solid #37C6F5;
+  display: block;
+  float: left;  
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
 #wpf-loader-two {
   height: 100%;
@@ -542,7 +591,7 @@ nav .brand-logo img {
 
 
 #home {
-  background-image: url("Huge-Backgrounds-10.jpg");
+  background-image: url("../img/bg/testimonial-1.jpg");
   background-position: 100% 100%;
   background-size: 100% 100%;
   display: inline;
@@ -583,7 +632,6 @@ nav .brand-logo img {
 .home-inner>p{
   color: #fff;
   font-size: 20px;
-  font-weight: 300;
   margin-bottom: 38px;
   text-transform: uppercase;
 }
@@ -1059,7 +1107,7 @@ transition: background-color 0.5s ease-in-out;
 
 
 #facts {
-  background-image: url("home-img3.jpg");
+  background-image: url("../img/bg/subscribe-bg.jpg");
   background-position: center center;
   background-size: 100% 100%;
   display: inline;
@@ -1502,10 +1550,10 @@ textarea.materialize-textarea {
 
 
 .footer-bottom{
-  background-image: url("home-img3.jpg");
+  background-image: url("../img/bg/home-img3.jpg");
   background-position: 100% 100%;
   background-size: 100% 100%;
-  opacity: 3;
+  /*opacity: 3;*/
   display: inline;
   float: left;
   width: 100%;
