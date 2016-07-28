@@ -995,32 +995,7 @@
     );
     wow.init();
       </script>
-      <?php
-
-      if(isset($_GET['signal']))
-      {
-        $sign = $_GET['signal'];
-        //echo $sign;
-        if ($sign == "notsent")
-            {
-              echo '<script> Materialize.toast("Message not sent. Please try again.", 10000); </script>';
-              // header("Location:index.php");
-            }
-
-        elseif ($sign == "sent") 
-            {
-             echo '<script> Materialize.toast("Message sent. Thank you!", 10000); </script>';
-             // header("location:index.php"); 
-            }
-
-         elseif ($sign == "sentfeedback") 
-            {
-             echo '<script> Materialize.toast("Feedback sent. Thank you!", 10000); </script>';
-             // header("location:index.php"); 
-            }    
-      }
-      ?>
-
+      
 <!-- modal -->
   <div id="modalforstore" class="modal modal-fixed-footer">
     <div class="modal-content"><i class="btnclose material-icons right modal-action modal-close">close</i>
