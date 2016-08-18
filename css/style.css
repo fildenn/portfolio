@@ -1,4 +1,6 @@
-
+.thesisdescription { 
+text-align: justify;
+}
 .say {
   font-size: 25px !important;
 }
@@ -145,6 +147,26 @@ color: #000 !important;
   bottom: -60px; 
 }
 
+/**/
+
+.aa-client-brand-slider .slick-dots li button {
+  background-color: #fff !important;
+  border: 0 none; 
+  outline: none;
+  height: 4px;  
+  padding: 5px;
+  width: 20px;
+}
+
+
+.aa-client-brand-slider .slick-dots li button::before {
+  display: none;
+}
+
+
+.aa-client-brand-slider .slick-dots {
+  bottom: -40px; 
+}
 
 
 /**/
