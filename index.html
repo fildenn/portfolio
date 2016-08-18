@@ -81,7 +81,7 @@
                     <div class="home-inner">                 
                       <h1 class="home-title"> <span id="typed"></span></h1>
 
-                      <p>I'm a fresh graduate of Bachelor of Science in Information Technology.<br> <br> I want to kick-start my career and obtain an entry level position in the field of IT.</p>
+                      <p>I'm a fresh graduate of Bachelor of Science in Information Technology.<br> <br> I am really excited to any opportunity to join a company, help to bring in new clients, develop world-class contents & anything else awesome you would be doing with your team.</p>
 
                       <a class="hire-me-btn btn waves-effect waves-light btn-large" href="#footer">Hire Me <i class="mdi-content-send left"></i></a>
                       
@@ -199,11 +199,11 @@
                     </div> -->
                     <span>BOOTSTRAP</span>
                     <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="50" data-pro-bar-delay="100"></div>
+                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="40" data-pro-bar-delay="100"></div>
                     </div>
                     <span>materialize</span>
                     <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="50" data-pro-bar-delay="100"></div>
+                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="40" data-pro-bar-delay="100"></div>
                     </div>
                     <span>Angular JS</span>
                     <div class="pro-bar-container color-wisteria">
@@ -211,7 +211,7 @@
                     </div>
                     <span>SASS (CSS PRE-PROCESSOR)</span>
                     <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="50" data-pro-bar-delay="100"></div>
+                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="40" data-pro-bar-delay="100"></div>
                     </div>
                     <br>
                     <h5>APPLICATION DEVELOPMENT</h5>
@@ -773,7 +773,7 @@
                                   <textarea disabled class="materialize-textarea" name="contactMessage" id="textarea1" required autocomplete = "off"></textarea>
                                   <label class="input-label" for="textarea1">Message</label>
                                 </div>
-                                <button disabled class="left waves-effect btn-flat brand-text submit-btn">send message</button>
+                                <button class="disabled tooltipped left waves-effect btn-flat brand-text submit-btn" data-position="right" data-delay="100" data-tooltip="All forms are disabled due to server issues.">send message</button>
                               </form>
                             </div>
                           </div>
@@ -822,7 +822,7 @@
           <li class="white-text"><i class="fa fa-fw fa-mobile fa-lg"></i> 0933-038-8414</li>
           <li class="white-text"><i class="fa fa-fw fa-envelope fa-lg"></i> jdmanuel242@gmail.com</li>
           <li class="white-text"><i class="fa fa-fw fa-skype fa-lg"></i> johndavemanuel</li>
-          <li class="white-text"><i class="fa fa-fw fa-globe fa-lg"></i> www.jandeybmanuel.esy.es</li>
+          <li class="white-text"><i class="fa fa-fw fa-globe fa-lg"></i> johndavemanuel.github.io/portfolio/</li>
           </ul>
 
 
@@ -867,7 +867,7 @@
         <script type="text/javascript" src="js/slick.js"></script>   
       <script type="text/javascript">
         $(document).ready(function(){
-        // Materialize.toast('Some projects in my portfolio cannot be view due to the database issue.', 4000)
+        // Materialize.toast('All forms are disabled due to some server issues.', 6000)
        $('.carousel').carousel();
        $('.slider').slider({
         full_width: false,
@@ -878,7 +878,7 @@
        });
        $('.slider').slider('start');//slide
        $('.fixed-action-btn').closeFAB();//close
-      // $('.tooltipped').tooltip({delay: 500});
+      $('.tooltipped').tooltip({delay: 500});
        $(function(){
 
         $("#typed").typed({
@@ -1119,13 +1119,13 @@
   <div id="modalforfeedb" class="modal">
     <div class="modal-content"><i class="btnclose material-icons right modal-action modal-close">close</i>
         <h5>I like to hear from you.</h5>
-    <form method = "POST" action = "comment_me.php">
+    <form method = "POST" action = "#">
       <div class="input-field textarea-input">
         <textarea disabled class="materialize-textarea" name="contactMessage" id="textareafeed" length="100" required autocomplete = "off"></textarea>
         <label class="input-label" for="textarea1">Comments/Suggestions</label>
       </div>
-      <br>
-       <button disabled class="right waves-effect btn-flat brand-text submit-btn" type="submit">send feedback</button>
+
+       <button class="disabled tooltipped left waves-effect btn-flat brand-text submit-btn" data-position="left" data-delay="100" data-tooltip="All forms are disabled due to server issues.">send feedback</button>
     </form>
     <br>
     </div>
@@ -1281,7 +1281,7 @@
    <div class="team"> <strong>San Francisco Multipurpose Cooperative System with SMS-Based Notification</strong></div>
     <div class="team"> <strong>ARC San Francisco Bulakan, Bulacan</strong></div>
     <br>
-    The San Francisco Multipurpose Cooperative System with SMS-Based Notification is intended to provide a solution for San Francisco Multipurpose Cooperative that would help in automating the manual handling of information and improve the services being conducted such as less time and easier accessing and retrieval of information needed. The system would be composed of Profiling system, Loan and Savings application and Loan and Savings calculations that would lessen the work of staff in processing business transactions by manual process. Features of the system would be generating of deposit and withdrawal slips, system database, security of the system and SMS notification for membership application approval, maturity of saving account specifically the time-deposit savings, loan approval, and notice for loan payment.
+    <div class="thesisdescription">    The San Francisco Multipurpose Cooperative System with SMS-Based Notification is intended to provide a solution for San Francisco Multipurpose Cooperative that would help in automating the manual handling of information and improve the services being conducted such as less time and easier accessing and retrieval of information needed. The system would be composed of Profiling system, Loan and Savings application and Loan and Savings calculations that would lessen the work of staff in processing business transactions by manual process. Features of the system would be generating of deposit and withdrawal slips, system database, security of the system and SMS notification for membership application approval, maturity of saving account specifically the time-deposit savings, loan approval, and notice for loan payment.</div>
     </div>
     <div class="modal-footer">
        <a  href="#!" class="right  modal-action modal-close waves-effect btn-flat">OK</a>
@@ -1293,9 +1293,9 @@
   <div class="team"> <strong>San Francisco Multipurpose Cooperative System</strong></div>
     <div class="team"> <strong>ARC San Francisco Bulakan, Bulacan</strong></div>
     <br>
-    San Francisco Multi-Purpose Cooperative (SFMPC) is a transformation of Samahang Nayon with principal office of business in ARC San Francisco Bulakan, Bulacan. It was organized and registered in the year 1989, which aims to enable the farmer beneficiaries as well as seasonal farm workers, vendors and small businessmen to avail of the lending program and other services to avoid exploitation of the indigent members. It was registered with the Cooperative Development Authority of the Philippines.
-The cooperative offers a variety of services such as savings, withdrawals and lending programs through membership. The San Francisco Multi-Purpose Cooperative System has been using the manual system in record keeping, member’s profiling and other data processing since it was established. As years passed by and with the growing number of human population the demand for pangkabuhayan services cannot be anticipated. The cooperative must maintain a reliable and accurate system in record keeping and data processing. 
-As we have seen and experienced, the fast rate of technological advancement greatly diminishes the ability of one organization to deliver its services effectively. To counteract this adverse effect of rapid change in technology, one must improve an existing information system and plan an appropriate measure that would bring it to the level compatible to economic viability in sustaining progress.  The manual system can be considered as a thing of the past. Automation by the use of machine rather than person increases efficiency. Retrieval of needed information can sometimes be frustrating, one request take minutes or hours to be processed completely. Resources like manpower and materials needed are rising slowly compare to the original allotted resources for each task. With the stated problem, the proponents proposed a Cooperative System that would help in providing services to the people in a great deal as well as the staff in the organization. The San Francisco Multipurpose Cooperative System would reduce the processes involved in making a certain output. The system would reduce the long-time procedure of accessing of files and producing an output in a reliable way without sacrificing quality. For this reason, the San Francisco Multipurpose Cooperative System can help to have a unified member records and compiled them in a database.  With these it would help the staff in a great deal saving some manpower and resources that can be allotted to other productive tasks and to attend to other problems of the organization.
+    <div class="thesisdescription">San Francisco Multi-Purpose Cooperative (SFMPC) is a transformation of Samahang Nayon with principal office of business in ARC San Francisco Bulakan, Bulacan. It was organized and registered in the year 1989, which aims to enable the farmer beneficiaries as well as seasonal farm workers, vendors and small businessmen to avail of the lending program and other services to avoid exploitation of the indigent members. It was registered with the Cooperative Development Authority of the Philippines.
+    The cooperative offers a variety of services such as savings, withdrawals and lending programs through membership. The San Francisco Multi-Purpose Cooperative System has been using the manual system in record keeping, member’s profiling and other data processing since it was established. As years passed by and with the growing number of human population the demand for pangkabuhayan services cannot be anticipated. The cooperative must maintain a reliable and accurate system in record keeping and data processing. 
+    As we have seen and experienced, the fast rate of technological advancement greatly diminishes the ability of one organization to deliver its services effectively. To counteract this adverse effect of rapid change in technology, one must improve an existing information system and plan an appropriate measure that would bring it to the level compatible to economic viability in sustaining progress.  The manual system can be considered as a thing of the past. Automation by the use of machine rather than person increases efficiency. Retrieval of needed information can sometimes be frustrating, one request take minutes or hours to be processed completely. Resources like manpower and materials needed are rising slowly compare to the original allotted resources for each task. With the stated problem, the proponents proposed a Cooperative System that would help in providing services to the people in a great deal as well as the staff in the organization. The San Francisco Multipurpose Cooperative System would reduce the processes involved in making a certain output. The system would reduce the long-time procedure of accessing of files and producing an output in a reliable way without sacrificing quality. For this reason, the San Francisco Multipurpose Cooperative System can help to have a unified member records and compiled them in a database.  With these it would help the staff in a great deal saving some manpower and resources that can be allotted to other productive tasks and to attend to other problems of the organization.</div>
 
     </div>
     <div class="modal-footer">
@@ -1403,7 +1403,14 @@ As we have seen and experienced, the fast rate of technological advancement grea
     <br>
     <br>
     <br>
-     <strong>*Documentation available upon request.</strong>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <strong>*Documentation available upon request.</strong>
     
     </div>
     <div class="modal-footer">
