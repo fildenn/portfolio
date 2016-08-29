@@ -612,7 +612,7 @@ nav .brand-logo img {
 /*--------------------*/
 
 
-#home {
+/*#home {
   background-image: url("../img/bg/testimonial-1.jpg");
   background-position: 100% 100%;
   background-size: 100% 100%;
@@ -621,9 +621,14 @@ nav .brand-logo img {
   height: 600px;
   position: relative;
   width: 100%;
-}
+}*/
 
 
+.parallax-container {
+   height: 605px !important;
+ };
+        
+ 
 #home .overlay-section {
   background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
   height: 100%;
