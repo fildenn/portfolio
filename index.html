@@ -7,7 +7,7 @@
       <meta name="description" content="Online Resume and Portfolio">
       <meta name="keywords" content="Portfolio","Dave Manuel Website","John Dave Manuel">
       <meta name="author" content="John Dave M. Manuel">
-      <title>John Dave M. Manuel:BSIT | Online Resume & Portfolio</title>
+      <title>John Dave M. Manuel : BSIT | Online Resume & Portfolio</title>
       <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <link href="css/font-awesome.css" rel="stylesheet">
       <link href="css/pro-bars.css" rel="stylesheet" type="text/css" media="all" />
@@ -41,7 +41,7 @@
                   </ul>
                       <li><a href="#portfolio" class="dropdown-button" data-activates="dropdown3">PORTFOLIO</a></li>
                          <ul id="dropdown3" class="dropdown-content">
-                              <li><a href="#portfolio">PROJECTS</a></li>
+                              <li><a href="#portfolio">PROJECT</a></li>
                               <li><a href="#screenshot">WEB DESIGN</a></li>
                                <li><a href="#facts">THESIS</a></li>
                         </ul>
@@ -73,7 +73,7 @@
       <div class="main-wrapper">
         <main role="main">
           <!-- START HOME SECTION -->
-   <section id="home">
+   <section id="home" class="parallax-container">
             <div class="overlay-section">
               <div class="container">
                 <div class="row">
@@ -81,17 +81,15 @@
                     <div class="home-inner">                 
                       <h1 class="home-title"> <span id="typed"></span></h1>
 
-                      <p>I'm a fresh graduate of Bachelor of Science in Information Technology.<br> <br> I am really excited to any opportunity to join a company, help to bring in new clients, develop world-class contents & anything else awesome you would be doing with your team.</p>
+                      <p>I'm a fresh graduate of Bachelor of Science in Information Technology.<br> <br>I am really excited to join a company, help to bring in new clients, develop world-class contents & anything else awesome you would be doing with your team.</p>
 
-                      <a class="hire-me-btn btn waves-effect waves-light btn-large" href="#footer">Hire Me <i class="mdi-content-send left"></i></a>
-                      
-                      <!-- Call to About Button -->
-                      <!-- <button class="btn btn-floating waves-effect waves-light btn-large white call-to-about"><i class="material-icons">play_for_work</i></button>                   -->
+                      <a class="hire-me-btn btn waves-effect waves-light btn-large" href="#footer">Hire Me <i class="mdi-content-send left"></i></a>                 
                     </div>
                   </div>  
                 </div>
               </div>
             </div>
+              <div id="homebg" class="parallax"><img src="img/bg/testimonial-1.jpg" alt=""></div>
           </section>
 
           <!-- START ABOUT SECTION -->
@@ -207,11 +205,11 @@
                     </div>
                     <span>Angular JS</span>
                     <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-30 color-amethyst" data-pro-bar-percent="30" data-pro-bar-delay="100"></div>
+                      <div class="pro-bar bar-30 color-amethyst" data-pro-bar-percent="20" data-pro-bar-delay="100"></div>
                     </div>
                     <span>SASS (CSS PRE-PROCESSOR)</span>
                     <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="40" data-pro-bar-delay="100"></div>
+                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="30" data-pro-bar-delay="100"></div>
                     </div>
                     <br>
                     <h5>APPLICATION DEVELOPMENT</h5>
@@ -221,7 +219,7 @@
                     </div>
                     <span>vb.net</span>
                     <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-30 color-amethyst" data-pro-bar-percent="30" data-pro-bar-delay="100"></div>
+                      <div class="pro-bar bar-30 color-amethyst" data-pro-bar-percent="20" data-pro-bar-delay="100"></div>
                     </div>
                     <br>
 <!--                      <h5>DATA MODELLING</h5>
@@ -531,7 +529,7 @@
                    <p>Here are my school works, projects and machine problem applications.</p>
                    <p><strong>NOTE:</strong> Some of my projects can't be view due to database issue.</p>
                 <div class="controls">
-                    <!-- <span><strong>FILTERS:</strong></span>   -->
+                    <span><strong>FILTER:</strong></span>  
                     <button class="filter waves-effect waves-light btn allactive wow fadeInLeft" data-wow-duration="0.25s" data-wow-delay="0.25s" data-filter="all">All</button>
                     <button class="filter waves-effect waves-light btn wow fadeInLeft" data-wow-duration="0.75s" data-wow-delay="0.75s"  data-filter=".web">Web</button>
                     <button class="filter waves-effect waves-light btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" data-filter=".java">Java</button>
@@ -839,7 +837,7 @@
         </div>
         <div class="col l3 s12">
           <h5 class="white-text menufooter">LOCATION</h5>
-          <p  class="white-text"><i class="fa fa-fw fa-map-marker fa-lg"></i> 155 Peralta Street<br/> Tabon, Pulilan, Bulacan<br/> Philippines 3005</p>
+          <p  class="white-text"><i class="fa fa-fw fa-map-marker fa-lg"></i> 155 P. Peralta Street<br/> Tabon, Pulilan 3005<br/> Bulacan, Philippines</p>
         </div>
       </div>
     </div>
@@ -867,7 +865,7 @@
         <script type="text/javascript" src="js/slick.js"></script>   
       <script type="text/javascript">
         $(document).ready(function(){
-        // Materialize.toast('All forms are disabled due to some server issues.', 6000)
+         $('.parallax').parallax();
        $('.carousel').carousel();
        $('.slider').slider({
         full_width: false,
@@ -882,7 +880,7 @@
        $(function(){
 
         $("#typed").typed({
-            strings: ["Hello<strong> World!</strong>","I'm <strong>John Dave M. Manuel.</strong>","<strong>Nice</strong> to meet you!","What's <strong>up?</strong>"],
+            strings: ["Hello<strong> World!</strong>","I'm <strong>John Dave Manuel.</strong>","<strong>Nice</strong> to meet you!","What's <strong>up?</strong>"],
             // stringsElement: $('#typed-strings'),
             typeSpeed: 200,
             backDelay: 300,
@@ -1107,7 +1105,7 @@
             <dt><strong>fancyBox</strong></dt>
             <dd>-www.fancyapps.com/fancybox </dd>
             <dt><strong>Slick</strong></dt>
-            <dd>http://kenwheeler.github.io/slick </dd>
+            <dd>-http://kenwheeler.github.io/slick </dd>
             <dt><strong>Images</strong></dt>
             <dd>-http://www.freecreatives.com </dd>
     </div>
@@ -1305,7 +1303,10 @@
   <!-- modalproject -->
   <div id="modalformembers" class="modal modal-fixed-footer">
     <div class="modal-content">
-    <div class="team"> <strong>Meet the team!</strong></div>
+    <div class="team"> <strong>San Francisco Multipurpose Cooperative System with SMS-Based Notification</strong></div>
+    <div class="team"> <strong>ARC San Francisco Bulakan, Bulacan</strong></div>
+    <br>
+    <div class="team"> <strong>We are a awesome team!</strong></div>
     <br>
 
       <div class="col s12 l12">
@@ -1398,20 +1399,13 @@
    <div class="team"> <strong>San Francisco Multipurpose Cooperative System with SMS-Based Notification</strong></div>
     <div class="team"> <strong>ARC San Francisco Bulakan, Bulacan</strong></div>
     <br>
+    <strong>Project Objectives</strong>
+    <p>General Objective</p>
+    <p style ="text-align: justify;">Develop an information system for San Francisco Multi-Purpose Cooperative that will improve the day-to-day processes involving withdrawal, savings and lending programs and with the utilization of short messaging system (SMS) as a method of notifying members regarding any business transactions made within the cooperative.</p>
+    <p>Specific Objectives</p>
+    <p>1. To plan and analyse a new and interactive avenue to the staff and members of San Francisco Multi-Purpose Cooperative.</p>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <strong>*Documentation available upon request.</strong>
-    
+    <strong>*Full Documentation available upon request.</strong>
     </div>
     <div class="modal-footer">
        <a  href="#!" class="right  modal-action modal-close waves-effect btn-flat">OK</a>
@@ -1465,6 +1459,9 @@
   <!-- modalforimages -->
   <div id="modalforimages" class="modal modal-fixed-footer">
     <div class="modal-content">
+    <div class="team"> <strong>San Francisco Multipurpose Cooperative System with SMS-Based Notification</strong></div>
+    <div class="team"> <strong>ARC San Francisco Bulakan, Bulacan</strong></div>
+    <br>
     <div class="team"> <strong>We are a team working on our thesis like it's our full time job.</strong></div>
     <br>
     <img class="responsive-img" src="img/IMG_1343.JPG">
