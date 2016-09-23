@@ -8,7 +8,7 @@ Owl Carousel (https://github.com/OwlFonk/OwlCarousel)
 Mix It Up https://mixitup.kunkalabs.com/
 
 Font Awesome 
-http://fortawesome.github.io/Font-Awesome/
+- http://fortawesome.github.io/Font-Awesome/
 
 Way Points https://github.com/imakewebthings/waypoints
 
