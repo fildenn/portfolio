@@ -2,6 +2,7 @@
 My Online Resume & Portfolio
 # Credits
 Materialize (http://materializecss.com/)
+
 Owl Carousel (https://github.com/OwlFonk/OwlCarousel)
 Mix It Up
 - https://mixitup.kunkalabs.com/
