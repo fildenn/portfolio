@@ -496,7 +496,6 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 }
 .header .bottom a {
 	color: #232323;
-	font-weight: bold;
 }
 .header .bottom .title {
 	font-size: 28px;
