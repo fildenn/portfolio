@@ -1,6 +1,5 @@
 # John Dave Manuel
-Online Resume &amp; Portfolio
-Based on Sility - vCard, CV & Resume WordPress Theme by WPmines
+Online Resume &amp; Portfolio based on Sility - vCard, CV & Resume WordPress Theme by WPmines
 
 # Credits
 Bootstrap
