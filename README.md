@@ -3,7 +3,7 @@ Online Resume &amp; Portfolio
 
 # Credits
 Bootstrap
--http://getbootstrap.com/
+- http://getbootstrap.com/
 
 Owl Carousel 
 - https://github.com/OwlFonk/OwlCarousel
