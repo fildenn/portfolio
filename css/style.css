@@ -499,7 +499,6 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 }
 .header .bottom .title {
 	font-size: 28px;
-	font-family: 'Raleway', sans-serif;
 	float: left;
 }
 .header .bottom .title a:hover {
