@@ -551,7 +551,7 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 	display: none;
 	float: right;
 	text-transform: uppercase;
-	line-height: 70px;
+	line-height: 90px;
 	height: 70px;
 	text-decoration: none;
 }
