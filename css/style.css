@@ -96,6 +96,7 @@ a {
 }
 a:hover {
 	color: #37C6F5;
+	text-decoration: none;
 }
 a:focus {
 	text-decoration: none;
@@ -189,8 +190,8 @@ h3.small-margin-bottom {
 }
 .map {
 	width: 100%;
-	height: 426px;
-	margin-top: 72px;
+	height: 280px;
+	/*margin-top: 72px;*/
 	border-radius: 10px !important;
 }
 
@@ -2286,3 +2287,11 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 .intro-text {
 	text-align: justify;
 }
+
+.companylinks {
+	color:#232323;
+}
+
+.categorybutton-active {
+	background: #37C6F5 !important;
+	color: #fff !important;
