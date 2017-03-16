@@ -606,7 +606,7 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 		padding: 0 12px;
 	}
 	.header .top .available span {
-		display: none;
+		/*display: none;*/
 	}
 	.header .bottom {
 		padding: 0 12px;
@@ -1135,7 +1135,7 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 	color: #232323;
 	text-align: center;
 	font-size: 15px;
-	line-height: 50px;
+	line-height: 35px;
 	text-transform: uppercase;
 	font-weight: 500;
 }
@@ -2295,3 +2295,47 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 .categorybutton-active {
 	background: #37C6F5 !important;
 	color: #fff !important;
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+    	.available {
+	font-size:10px;
+}
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    	.available {
+	font-size:15px;
+}
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    	    	.available {
+	font-size:20px;
+}
+   
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    	    	    	.available {
+	font-size:14px;
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+    abbr[title] {
+    	border-bottom: none !important;   }
