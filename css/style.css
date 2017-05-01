@@ -1525,8 +1525,9 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 	margin-top: 60px;
 }
 .portfolio .item {
-	width: 25%;
+	width: 50%;
 	padding: 20px;
+	margin-bottom: 30px;
 }
 .portfolio .item img {
 	width: 100%;
