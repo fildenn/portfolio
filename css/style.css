@@ -824,7 +824,7 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 }
 .slide-out-widgets {
 	padding: 30px;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 }
 .slide-out-widget {
 	margin-bottom: 60px;
@@ -2350,4 +2350,10 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 
   .site-img {
   	border:1px solid black;
+  }
+
+  .alert-msg {
+  	display: none;
+  	margin-top: 0px !important;
+  	margin-bottom: 10px;
   }
