@@ -2346,3 +2346,8 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
   .item img {
   	height: 250px !important;
   }
+
+
+  .site-img {
+  	border:1px solid black;
+  }
