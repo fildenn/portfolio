@@ -331,8 +331,7 @@ jQuery('.screenshots-slide').slick({
 	  dots: true,
 	  infinite: true,
 	  arrows:true, 
- 	  centerMode: true,
- 	  adaptiveHeight: true,
+	  adaptiveHeight: true,
 	  slidesToShow: 1,
 
 	  responsive: [
@@ -400,5 +399,14 @@ jQuery('.screenshots-slide').slick({
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize_map);
+
+	$('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+     adaptiveHeight: true,
+    cssEase: 'linear'
+});
 
 })(jQuery);

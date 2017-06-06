@@ -2357,3 +2357,21 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
   	margin-top: 0px !important;
   	margin-bottom: 10px;
   }
+
+  .certificate-img {
+  	margin: 0 auto;
+  }
+
+  .slick-prev:before {
+    color: #37C6F5;
+}
+
+.slick-next:before {
+    color: #37C6F5;
+}
+.slick-slide:focus { outline: none !important; }
+.slick-list {
+    outline: none !important;
+}
+
+.slick-slide, .slick-slide *{ outline: none !important; }
