@@ -333,7 +333,7 @@ jQuery('.screenshots-slide').slick({
 	  arrows:true, 
  	  centerMode: true,
   	  centerPadding: '15px',  
-	  slidesToShow: 3,
+	  slidesToShow: 1,
 	  responsive: [
 	    {
 	      breakpoint: 1024,
