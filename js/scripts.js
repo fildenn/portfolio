@@ -332,8 +332,9 @@ jQuery('.screenshots-slide').slick({
 	  infinite: true,
 	  arrows:true, 
  	  centerMode: true,
-  	  centerPadding: '15px',  
+ 	  adaptiveHeight: true,
 	  slidesToShow: 1,
+
 	  responsive: [
 	    {
 	      breakpoint: 1024,
