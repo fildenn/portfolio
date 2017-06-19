@@ -368,7 +368,7 @@
   				<p><strong>DESCRIPTION:</strong> A company provides information & communication technology development, broadband, and telephone services. Softbank Telecom offers communication solutions to individuals and companies.</p>
       			<p><strong>LOCATION:</strong> Jakarta, Indonesia</p>
       			<p><strong>TEAM SIZE:</strong> 2 Members</p>
-                <p><strong>SKILL:</strong> Bootstarp, Wordpress</p>
+                <p><strong>SKILL:</strong> Bootstrap, Wordpress</p>
                 <img class ="img-responsive site-img" src="images/work/Softbank Indonesia.png">     
 			</div>
 				<div class="modal-footer">
@@ -379,6 +379,27 @@
 		</div><!-- modal-dialog -->
 </div><!-- modal -->
 
+<div class="modal" id="modalLMS" tabindex="-1" aria-labelledby="myModalLabel-3" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel-3">Mosaique Learn</h4>
+				</div>
+			<div class="modal-body">
+  				<p><strong>DESCRIPTION:</strong> An e-learning platform based on Drupal that allows  you to manage your online trainings, and efficiently ensure that student, employee and partner skills remain up to date.</p>
+      			<p><strong>TEAM SIZE:</strong> 2 Members</p>
+                <p><strong>NOTE:</strong> Based on Opigno - an Open Source e-learning platform based on Drupal. 
+                <br>
+                <a href="https://www.opigno.org/en">OPIGNO LMS: THE DRUPAL LMS</a></p>
+                <img class ="img-responsive site-img" src="images/work/LMS page.png">     
+			</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-dialog" data-dismiss="modal">Cancel</button> -->
+					<button type="button"  data-dismiss="modal" class="btn btn-dialog">OK</button>
+				</div>
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+</div><!-- modal -->
 
 <div class="modal" id="modalThesis" tabindex="-1" aria-labelledby="myModalLabel-10" data-backdrop="static">
 		<div class="modal-dialog" role="document">
@@ -791,13 +812,11 @@
 					<div class="container">
 						<h2>My Portfolio</h2>
 						<div class="portfolio-wrapper">
-							<!-- <div id="portfolio-filters" class="portfolio-filters"> -->
-<!-- 								<button class="button solid-button white-purple small btn-category" id="showall" data-filter="*">All</button>
-								<button class="button solid-button white-purple small btn-category" data-filter=".thesis">Thesis</button>
-								<button class="button solid-button white-purple small btn-category" data-filter=".work">Work</button> -->
-<!--                                 <button class="button solid-button white-purple small btn-category" data-filter=".school">School</button>
-								<button class="button solid-button white-purple small btn-category" data-filter=".freelance">Freelance</button> -->
-							<!-- </div> -->
+							<div id="portfolio-filters" class="portfolio-filters">
+								<button class="button solid-button white-purple small btn-category" id="showall" data-filter="*">All</button>
+								<button class="button solid-button white-purple small btn-category" data-filter=".work">Web</button>
+                                <button class="button solid-button white-purple small btn-category" data-filter=".ui">UI</button>
+							</div>
 							<div id="portfolio" class="portfolio">
 							
 <!-- 								<div class="item thesis" data-toggle="modal" data-target="#modalThesis">
@@ -849,7 +868,17 @@
 											<span class="category"></span>
 										</div> <!-- end .meta -->
 									</a> <!-- end .overlay -->
-								</div> <!-- end .item -->																
+								</div> <!-- end .item -->
+								<div class="item work" data-toggle="modal" data-target="#modalLMS">
+									<img src="images/work/LMS.png" alt="Computer Icon" class="img-responsive">
+									<a href="#" class="overlay">
+										<div class="background"></div>
+										<div class="meta">
+											<span class="title">Mosaique Learn</span>
+											<span class="category"></span>
+										</div> <!-- end .meta -->
+									</a> <!-- end .overlay -->
+								</div> <!-- end .item -->																	
 							</div> <!-- end .portfolio -->
 						</div> <!-- end .portfolio-wrapper -->
 <!-- 						<div class="spacer"></div>
@@ -868,8 +897,11 @@
 						    <div class="col-md-12">
 						        <div class="screenshots-area">
 						        	<div class="slider screenshots-slide">
-						        	<div>
+<!-- 						        	<div>
 									    <img class="certificate-img img-responsive" src="images/certificate/hsk.jpg" />
+									  </div> -->
+									  <div>
+									    <img class="certificate-img img-responsive" src="images/certificate/UC-6JAGZFNS.jpg" />
 									  </div>
 									  <div>
 									    <img class="certificate-img img-responsive" src="images/certificate/mta1.PNG" />

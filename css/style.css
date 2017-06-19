@@ -2349,7 +2349,7 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 
 
   .site-img {
-  	border:1px solid black;
+  	border:1px solid gray;
   }
 
   .alert-msg {
