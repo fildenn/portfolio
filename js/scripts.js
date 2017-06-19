@@ -330,6 +330,8 @@
 jQuery('.screenshots-slide').slick({
 	  dots: true,
 	  infinite: true,
+	  autoplay: true,
+          autoplaySpeed: 2000,
 	  arrows:true, 
 	  adaptiveHeight: true,
 	  slidesToShow: 1,
@@ -408,5 +410,18 @@ jQuery('.screenshots-slide').slick({
      adaptiveHeight: true,
     cssEase: 'linear'
 });
+
+
+
+$('.modal').on('shown.bs.modal', function (e) {
+  $('.screenshots-slide').slick();
+
+})
+
+
+          $('.modal').on('shown.bs.modal', function (e) {
+      $('.screenshots-slide').resize();
+       
+    })
 
 })(jQuery);
